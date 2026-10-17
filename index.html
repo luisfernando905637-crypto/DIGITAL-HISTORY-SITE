@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5f2">
+  <meta name="description" content="Uma viagem interativa por cinco décadas de evolução tecnológica, de 1976 a 2026.">
+  <title>DIGITAL. — 50 anos de evolução tecnológica</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="wordmark" href="#inicio" aria-label="DIGITAL. início">DIGITAL<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+      <a href="#linha-do-tempo">Linha do tempo</a>
+      <a href="#dados">Em números</a>
+      <a href="#comparar">Ontem e hoje</a>
+      <a href="#impactos">Impactos</a>
+    </nav>
+    <a class="header-note" href="#fontes">1976 <span>—</span> 2026</a>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section-wrap" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Especial · história da tecnologia</p>
+        <h1 id="hero-title">A tecnologia mudou.<br><em>O mundo também.</em></h1>
+        <p class="hero-intro">Cinco décadas transformaram máquinas de mesa em redes que cabem no bolso — e mudaram como aprendemos, trabalhamos e nos encontramos.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#linha-do-tempo">Explorar a jornada <span aria-hidden="true">↘</span></a>
+          <span class="hero-caption">Uma leitura interativa<br>de 1976 a 2026</span>
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Composição ilustrada de circuitos, telas e conexões que atravessam cinco décadas">
+        <div class="art-topline"><span>PASSADO / PRESENTE</span><span>50° 00′</span></div>
+        <div class="art-grid" aria-hidden="true"></div>
+        <div class="art-orbit orbit-one" aria-hidden="true"></div>
+        <div class="art-orbit orbit-two" aria-hidden="true"></div>
+        <div class="art-node node-a" aria-hidden="true"></div>
+        <div class="art-node node-b" aria-hidden="true"></div>
+        <div class="art-node node-c" aria-hidden="true"></div>
+        <div class="art-device device-old" aria-hidden="true">
+          <div class="device-screen"><span class="screen-line"></span><span class="screen-line short"></span><span class="screen-cursor"></span></div>
+          <div class="device-base"></div>
+          <span class="device-year">1976</span>
+        </div>
+        <div class="art-device device-new" aria-hidden="true">
+          <div class="phone-frame"><span class="phone-island"></span><span class="phone-mark">AI</span><span class="phone-wave"></span><span class="phone-wave short"></span><span class="phone-dot"></span></div>
+          <span class="device-year">2026</span>
+        </div>
+        <div class="art-track" aria-hidden="true"><span>01</span><i></i><span>50</span></div>
+        <p class="art-annotation">Da mesa<br>à nuvem.</p>
+        <span class="art-coordinates">A HISTÓRIA AINDA ESTÁ SENDO ESCRITA</span>
+      </div>
+      <div class="hero-foot"><span>01 — 05</span><span>Uma transformação em cinco capítulos</span><span>Role para descobrir <b aria-hidden="true">↓</b></span></div>
+    </section>
+
+    <section class="timeline-section section-wrap" id="linha-do-tempo" aria-labelledby="timeline-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / Linha do tempo</p><h2 id="timeline-title">Meio século em movimento.</h2></div>
+        <p class="section-aside">Cada década abriu uma porta.<br>Escolha um período para entrar.</p>
+      </div>
+      <div class="timeline-tabs" role="tablist" aria-label="Períodos da história digital">
+        <button class="period-tab" id="tab-0" type="button" role="tab" aria-selected="true" aria-controls="timeline-panel" tabindex="0" data-period="0"><span>01</span><strong>1976—1989</strong><small>O computador pessoal</small></button>
+        <button class="period-tab" id="tab-1" type="button" role="tab" aria-selected="false" aria-controls="timeline-panel" tabindex="-1" data-period="1"><span>02</span><strong>1990—1999</strong><small>A web se conecta</small></button>
+        <button class="period-tab" id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="timeline-panel" tabindex="-1" data-period="2"><span>03</span><strong>2000—2009</strong><small>A vida fica online</small></button>
+        <button class="period-tab" id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="timeline-panel" tabindex="-1" data-period="3"><span>04</span><strong>2010—2019</strong><small>Tudo na palma da mão</small></button>
+        <button class="period-tab" id="tab-4" type="button" role="tab" aria-selected="false" aria-controls="timeline-panel" tabindex="-1" data-period="4"><span>05</span><strong>2020—2026</strong><small>O desafio da IA</small></button>
+      </div>
+      <div class="timeline-panel" id="timeline-panel" role="tabpanel" aria-labelledby="tab-0" tabindex="0">
+        <div class="period-intro"><span class="period-kicker" id="period-kicker">CAPÍTULO 01</span><h3 id="period-title">Quando o computador<br>chegou mais perto.</h3><p id="period-description"></p><span class="period-range" id="period-range">1976 — 1989</span></div>
+        <div class="event-list" id="event-list" aria-live="polite"></div>
+      </div>
+      <p class="timeline-note">A linha do tempo reúne marcos selecionados, não uma lista completa. As datas e os contextos estão ligados às fontes citadas ao fim da página.</p>
+    </section>
+
+    <section class="data-section" id="dados" aria-labelledby="data-title">
+      <div class="section-wrap data-inner">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / Em números</p><h2 id="data-title">Uma rede que alcançou<br>o planeta.</h2></div>
+          <p class="section-aside">Acesso à internet no mundo<br>em proporção da população</p>
+        </div>
+        <div class="stats-row" aria-label="Indicadores de acesso à internet">
+          <div class="stat-block"><strong>1 em 6</strong><span>pessoas conectadas em 2005</span></div>
+          <div class="stat-block"><strong>+58 <small>p.p.</small></strong><span>entre 2005 e 2025*</span></div>
+          <div class="stat-block"><strong>4,7×</strong><span>a proporção de pessoas online em 2025 vs. 2005*</span></div>
+        </div>
+        <div class="chart-layout">
+          <div class="chart-main">
+            <div class="chart-heading"><div><h3>Acesso à internet</h3><p>Percentual da população mundial · anos selecionados</p></div><span class="chart-unit">% DA POPULAÇÃO</span></div>
+            <div class="bar-chart" id="internet-chart" role="group" aria-label="Gráfico interativo de acesso à internet por ano"></div>
+            <p class="chart-feedback" id="chart-feedback" aria-live="polite">Selecione uma barra para ver o dado daquele ano.</p>
+            <p class="chart-source">Fonte: Banco Mundial, indicador <a href="https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=1W" target="_blank" rel="noreferrer">Individuals using the Internet (% of population)</a>, baseado na base de indicadores da UIT. Valores publicados: 2005: 15,6%; 2010: 28,4%; 2015: 39,9%; 2020: 60,1%; 2025: 73,6%. No gráfico, arredondados para inteiros. *Cálculo a partir dos valores não arredondados.</p>
+          </div>
+          <aside class="chart-aside"><span class="aside-number">74%</span><h3>da população mundial usava internet em 2025.</h3><p>É a estimativa mais recente da série consultada. Ainda assim, preço, cobertura, dispositivos e habilidades digitais criam barreiras de acesso.</p><a href="https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=1W" target="_blank" rel="noreferrer">Consultar a série do Banco Mundial <span aria-hidden="true">↗</span></a></aside>
+        </div>
+        <p class="data-method">Nota metodológica: série histórica do Banco Mundial, baseada na base de indicadores da UIT; percentuais arredondados para inteiros no gráfico. O ano final do projeto é 2026, mas o último dado disponível na série consultada é 2025. As barras representam uso da internet, não velocidade ou qualidade de conexão; não há projeções.</p>
+      </div>
+    </section>
+
+    <section class="compare-section section-wrap" id="comparar" aria-labelledby="compare-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / Ontem e hoje</p><h2 id="compare-title">A forma muda.<br>As perguntas ficam.</h2></div>
+        <p class="section-aside">Abra cada comparação<br>para ver o que mudou — e o que não.</p>
+      </div>
+      <div class="compare-grid">
+        <details class="compare-card">
+          <summary><span class="compare-index">01 — PROCESSAMENTO</span><span class="compare-visual computer-visual" aria-hidden="true"><span class="crt-screen"><i></i><i></i><i></i></span><span class="modern-screen"><i></i><i></i><i></i><b></b></span><span class="visual-arrow">→</span></span><span class="compare-title">Da mesa ao bolso.</span><span class="compare-prompt">Computador de mesa ↔ computador atual</span><span class="compare-open" aria-hidden="true">+</span></summary>
+          <div class="compare-detail"><p>O computador pessoal ocupava uma mesa e dependia de periféricos. Hoje, processadores em notebooks e celulares fazem muito mais com menos energia e espaço. O ganho em capacidade não eliminou a dependência de infraestrutura, energia e manutenção.</p></div>
+        </details>
+        <details class="compare-card">
+          <summary><span class="compare-index">02 — COMUNICAÇÃO</span><span class="compare-visual phone-visual" aria-hidden="true"><span class="landline"><i></i><b></b></span><span class="smartphone"><i></i><b></b></span><span class="visual-arrow">→</span></span><span class="compare-title">Uma chamada. Um mundo.</span><span class="compare-prompt">Telefone convencional ↔ smartphone</span><span class="compare-open" aria-hidden="true">+</span></summary>
+          <div class="compare-detail"><p>O telefone convencional conectava pessoas por voz em um lugar específico. O smartphone reuniu chamadas, câmera, mapas e acesso à internet em um dispositivo portátil — ampliando possibilidades e também a coleta de dados pessoais.</p></div>
+        </details>
+        <details class="compare-card">
+          <summary><span class="compare-index">03 — ARMAZENAMENTO</span><span class="compare-visual storage-visual" aria-hidden="true"><span class="floppy"><i></i></span><span class="cloud-shape">☁</span><span class="visual-arrow">→</span></span><span class="compare-title">Do objeto à nuvem.</span><span class="compare-prompt">Mídia física ↔ armazenamento em nuvem</span><span class="compare-open" aria-hidden="true">+</span></summary>
+          <div class="compare-detail"><p>Disquetes e discos guardavam arquivos localmente e precisavam ser transportados. A nuvem permite sincronizar e acessar arquivos de vários dispositivos, mas depende de internet, de um provedor e de práticas de segurança e cópia de backup.</p></div>
+        </details>
+        <details class="compare-card">
+          <summary><span class="compare-index">04 — INFORMAÇÃO</span><span class="compare-visual search-visual" aria-hidden="true"><span class="search-page"><i></i><i></i><i></i></span><span class="ai-orb">AI</span><span class="visual-arrow">→</span></span><span class="compare-title">Encontrar. Ou perguntar.</span><span class="compare-prompt">Pesquisa na web ↔ assistentes de IA</span><span class="compare-open" aria-hidden="true">+</span></summary>
+          <div class="compare-detail"><p>Um mecanismo de busca aponta páginas para a pessoa avaliar. Um assistente de IA pode resumir e redigir respostas, mas pode errar ou inventar detalhes. Conferir fontes e contexto segue sendo essencial.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="impact-section" id="impactos" aria-labelledby="impact-title">
+      <div class="section-wrap impact-inner">
+        <div class="section-heading">
+          <div><p class="eyebrow">04 / O que mudou</p><h2 id="impact-title">Mais acesso.<br>Novas responsabilidades.</h2></div>
+          <p class="section-aside">Tecnologia não é neutra: seus efeitos<br>dependem de como e por quem é usada.</p>
+        </div>
+        <div class="impact-grid">
+          <article class="impact-item"><span class="impact-number">01</span><h3>Educação</h3><p>Aulas, bibliotecas e cursos alcançam mais gente. Ao mesmo tempo, conexão desigual, distrações e informação sem curadoria afetam quem consegue aprender.</p><span class="impact-tag">ACESSO + DESIGUALDADE</span></article>
+          <article class="impact-item"><span class="impact-number">02</span><h3>Comunicação</h3><p>Mensagens atravessam distâncias em segundos. Redes aproximam comunidades, mas também aceleram boatos e podem reforçar bolhas de opinião.</p><span class="impact-tag">PROXIMIDADE + CONTEXTO</span></article>
+          <article class="impact-item"><span class="impact-number">03</span><h3>Trabalho</h3><p>Ferramentas digitais permitem colaboração remota e automatizam tarefas. Isso muda profissões, exige novas habilidades e pode ampliar a vigilância no trabalho.</p><span class="impact-tag">FLEXIBILIDADE + ADAPTAÇÃO</span></article>
+          <article class="impact-item"><span class="impact-number">04</span><h3>Entretenimento</h3><p>Filmes, música e jogos ficam sob demanda e conectam fãs. Recomendações personalizadas facilitam descobertas, mas disputam atenção e registram preferências.</p><span class="impact-tag">ESCOLHA + ATENÇÃO</span></article>
+        </div>
+        <div class="responsibility-note"><span class="note-mark" aria-hidden="true">!</span><p><strong>Três questões para levar adiante</strong><br>Privacidade: quem guarda nossos dados? · Desinformação: como verificamos o que vemos? · Dependência: que espaço queremos reservar para estar desconectados?</p></div>
+      </div>
+    </section>
+
+    <section class="sources-section section-wrap" id="fontes" aria-labelledby="sources-title">
+      <div class="sources-header"><div><p class="eyebrow">Para continuar pesquisando</p><h2 id="sources-title">Fontes e leituras.</h2></div><span>Referências verificáveis<br>para esta viagem</span></div>
+      <div class="source-list">
+        <a href="https://www.w3.org/History/1989/proposal.html" target="_blank" rel="noreferrer"><span>01</span><span>W3C · A proposta original da World Wide Web</span><b aria-hidden="true">↗</b></a>
+        <a href="https://www.ibm.com/history/personal-computer" target="_blank" rel="noreferrer"><span>02</span><span>IBM · A história do computador pessoal</span><b aria-hidden="true">↗</b></a>
+        <a href="https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/" target="_blank" rel="noreferrer"><span>03</span><span>Apple Newsroom · Apresentação do iPhone, 2007</span><b aria-hidden="true">↗</b></a>
+        <a href="https://www.nature.com/articles/nature16961" target="_blank" rel="noreferrer"><span>04</span><span>Nature · AlphaGo e redes neurais</span><b aria-hidden="true">↗</b></a>
+        <a href="https://openai.com/index/chatgpt/" target="_blank" rel="noreferrer"><span>05</span><span>OpenAI · Apresentação pública do ChatGPT, 2022</span><b aria-hidden="true">↗</b></a>
+        <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noreferrer"><span>06</span><span>União Europeia · Regulamento de Inteligência Artificial</span><b aria-hidden="true">↗</b></a>
+        <a href="https://www.itu.int/itu-d/reports/statistics/facts-figures-2024/" target="_blank" rel="noreferrer"><span>07</span><span>UIT · Facts and Figures 2024</span><b aria-hidden="true">↗</b></a>
+        <a href="https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=1W" target="_blank" rel="noreferrer"><span>08</span><span>Banco Mundial · Uso da internet (% da população)</span><b aria-hidden="true">↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="wordmark" href="#inicio">DIGITAL<span>.</span></a><p>50 anos de evolução tecnológica<br>Um projeto educativo · 1976—2026</p><a class="back-top" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a></div>
+    <div class="footer-bottom"><span>Feito para aprender, questionar e compartilhar.</span><span>© Projeto escolar · 2026</span></div>
+  </footer>
+</body>
+</html>
